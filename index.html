@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Chat App</title>
+</head>
+<body>
+    <div class="app">
+        <div class="logo">Chat App</div>
+        <div class="pages">
+            <div id="chat" class="page">
+                <div class="chat-header">
+                    <div class="chat-header-left">
+                        <i class="fa fa-arrow-left back"></i>
+                        <img src="images/user.jpeg" class="user-pic" alt="User">
+                        <span id="username">John Doe</span>
+                    </div>
+                    <div class="chat-header-right">
+                        <i class="fa fa-ellipsis-v user-menu"></i>
+                    </div>
+                </div>
+                <div class="chat-body">
+                    <div class="incoming-msg msg">
+                        <span>Hello</span>
+                    </div>
+                    <div class="outgoing-msg msg">
+                        <span>Hi, How are you?</span>
+                    </div>
+                    <div class="incoming-msg msg">
+                        <span>I'm good. How about you?</span>
+                    </div>
+                    <div class="outgoing-msg msg">
+                        <span>I'm also good</span>
+                    </div>
+                    <div class="outgoing-msg msg">
+                        <span>Listen one thing</span>
+                    </div>
+                    <div class="incoming-msg msg">
+                        <span>Yeah!</span>
+                    </div>
+                    <div class="outgoing-msg msg">
+                        <span>Have you checked VinayWebGuy profile on github</span>
+                    </div>
+                    <div class="incoming-msg msg">
+                        <span>Yeah I've seen that. He has some cool projecs.</span>
+                    </div>
+                    <div class="outgoing-msg msg">
+                        <span>Yupp! Have you seen the Mystery word repo.</span>
+                    </div>
+                    <div class="incoming-msg msg">
+                        <span>No let me check</span>
+                    </div>
+                </div>
+                <div class="msg-form">
+                    <input type="text" placeholder="Type your message">
+                    <i class="fa fa-paper-plane"></i>
+                </div>
+            </div>
+            <div id="users" class="page off">
+                <input type="text" class="search-user" placeholder="Search User">
+                <div class="all-users">
+                    <div class="single-user">
+                        <div>
+                            <img src="images/user.jpeg" alt="">
+                            <span>John Doe</span>
+                        </div>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                    <div class="single-user">
+                        <div>
+                            <img src="images/user1.jpeg" alt="">
+                            <span>Mia Addams</span>
+                        </div>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                    <div class="single-user">
+                        <div>
+                            <img src="images/user2.jpeg" alt="">
+                            <span>Stephanie</span>
+                        </div>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                    <div class="single-user">
+                        <div>
+                            <img src="images/user3.jpeg" alt="">
+                            <span>Chris Jack</span>
+                        </div>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                    <div class="single-user">
+                        <div>
+                            <img src="images/user4.jpeg" alt="">
+                            <span>Jack Wills</span>
+                        </div>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                    <div class="single-user">
+                        <div>
+                            <img src="images/user5.jpeg" alt="">
+                            <span>Steve Bin</span>
+                        </div>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                    <div class="single-user">
+                        <div>
+                            <img src="images/user6.jpeg" alt="">
+                            <span>Zoya</span>
+                        </div>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                    <div class="single-user">
+                        <div>
+                            <img src="images/user7.jpeg" alt="">
+                            <span>Nicky bella</span>
+                        </div>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                    <div class="single-user">
+                        <div>
+                            <img src="images/user8.jpeg" alt="">
+                            <span>Angela</span>
+                        </div>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                    <div class="single-user">
+                        <div>
+                            <img src="images/user9.jpeg" alt="">
+                            <span>Bella Chis</span>
+                        </div>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="add-user" class="page off">
+              <div class="add-user-form">
+                <h3>Add friend</h3>
+                <input type="number" placeholder="Number">
+                <input type="number" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Address"></textarea>
+                <button>Save</button>
+              </div>
+            </div>
+        </div>
+        <div class="menu">
+            <span id="chat-menu" class="active">
+                <i class="menu-icon fa fa-message"></i>
+            </span>
+            <span id="users-menu">
+                <i class="menu-icon fa fa-users"></i>
+            </span>
+            <span id="add-user-menu">
+                <i class="menu-icon fa fa-user-plus"></i>
+            </span>
+            <span id="settings-menu">
+                <i class="fa fa-sign-out-alt"></i>
+            </span>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
